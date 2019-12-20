@@ -6,7 +6,7 @@ class Dog
   attr_reader :name
   
   def initialize(name)
-    save(self,name)
+    save(name)
   end
   
   def self.all
@@ -21,9 +21,9 @@ class Dog
     @@all.each{|dog_name| puts dog_name.name}
   end
 
-  def save(instance,name)
+  def save(name)
     @name = name
-    @@all << instance
+    @@all << self
   end
   
 end
