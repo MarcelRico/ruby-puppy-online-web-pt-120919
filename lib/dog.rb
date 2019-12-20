@@ -21,8 +21,6 @@ class Dog
     @@all.each{|dog_name| puts dog_name.name}
   end
 
-  private
-
   def save(instance,name)
     @name = name
     @@all << instance
