@@ -1,13 +1,12 @@
 # Add your code here
 class Dog
-  
-  @@dog_count = 0
+
   @@all = []
   
   attr_reader :name
   
   def initialize(name)
-    save(self)
+    save(self,name)
   end
   
   def self.all
@@ -24,9 +23,8 @@ class Dog
 
   private
 
-  def save(instance)
+  def save(instance,name)
     @name = name
-    @@dog_count += 1 
     @@all << instance
   end
   
