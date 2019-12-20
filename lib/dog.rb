@@ -9,7 +9,7 @@ class Dog
   def initialize(name)
     @name = name
     @@dog_count += 1 
-    @@all << self
+    @@all << name
   end
   
   def all
