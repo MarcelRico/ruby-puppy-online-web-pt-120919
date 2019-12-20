@@ -6,7 +6,7 @@ class Dog
   attr_reader :name
   
   def initialize(name)
-    save(instance,name)
+    save(name,self)
   end
   
   def self.all
