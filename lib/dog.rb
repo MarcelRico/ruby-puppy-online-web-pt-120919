@@ -4,6 +4,8 @@ class Dog
   @@dog_count = 0
   @@all = []
   
+  attr_reader :name
+  
   def initialize(name)
     @name = name
     @@dog_count += 1 
