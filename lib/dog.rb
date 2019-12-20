@@ -23,9 +23,7 @@ class Dog
   def self.print_all
     @@all.each{|dog_name| puts dog_name.name}
   end
-  
-  private
-  
+
   def save(instance)
     @@all << self
   end
