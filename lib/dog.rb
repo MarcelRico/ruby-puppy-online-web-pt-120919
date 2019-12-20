@@ -23,7 +23,7 @@ class Dog
 
   def save(ins,name)
     @name = name
-    @@all << instance
+    @@all << ins
   end
   
 end
