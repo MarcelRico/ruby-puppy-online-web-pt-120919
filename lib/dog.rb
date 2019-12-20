@@ -5,7 +5,7 @@ class Dog
   @@all = []
   
   def initialize(name)
-    save()
+    save(name)
   end
   
   def self.all
